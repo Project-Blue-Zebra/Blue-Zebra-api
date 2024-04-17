@@ -1,0 +1,6 @@
+@blue.zebra.Api_HostAddress = http://localhost:5152
+
+GET {{blue.zebra.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
