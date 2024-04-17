@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using blue.zebra.Domain.Catalog;
 using blue.zebra.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace blue.zebra.Controllers
 {
@@ -49,7 +50,17 @@ namespace blue.zebra.Controllers
         }
 
         [HttpPut]
-        public IActionResult Put(int id, Item item){
+        public IActionResult Put(int id, [FromBody] Item item){
+            if (id != item.Id){
+                return BadRequest();
+            }
+            if (_db.Items.Find(id) == null){
+                return NotFound();
+            }
+
+            _db.Entry(item).State = EntityState.Modified;
+            _db.SaveChanges();
+            
             return NoContent();
         }
 
