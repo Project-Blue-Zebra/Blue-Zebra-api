@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "blue.zebra.Domain", "blue.z
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "blue.zebra.Data", "blue.zebra.Data\blue.zebra.Data.csproj", "{6C41530D-E9E8-4F6D-AE2F-2F58939CA1B5}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{3094F7CE-165D-42A3-AC9D-B25E8C687DF6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "blue.zebra.Domain.Tests", "tests\blue.zebra.Domain.Tests\blue.zebra.Domain.Tests.csproj", "{613EC2FA-96F9-499A-B65C-B9AFDA1D9D1F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +34,12 @@ Global
 		{6C41530D-E9E8-4F6D-AE2F-2F58939CA1B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6C41530D-E9E8-4F6D-AE2F-2F58939CA1B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6C41530D-E9E8-4F6D-AE2F-2F58939CA1B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{613EC2FA-96F9-499A-B65C-B9AFDA1D9D1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{613EC2FA-96F9-499A-B65C-B9AFDA1D9D1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{613EC2FA-96F9-499A-B65C-B9AFDA1D9D1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{613EC2FA-96F9-499A-B65C-B9AFDA1D9D1F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{613EC2FA-96F9-499A-B65C-B9AFDA1D9D1F} = {3094F7CE-165D-42A3-AC9D-B25E8C687DF6}
 	EndGlobalSection
 EndGlobal
