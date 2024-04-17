@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\blue.zebra.Domain\blue.zebra.Domain.csproj" />
+    <ProjectReference Include="..\blue.zebra.Data\blue.zebra.Data.csproj" />
   </ItemGroup>
 
 </Project>

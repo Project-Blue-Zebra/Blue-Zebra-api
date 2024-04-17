@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "blue.zebra.Api", "blue.zebr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "blue.zebra.Domain", "blue.zebra.Domain\blue.zebra.Domain.csproj", "{D74AF26B-BD5F-4740-A75A-308064C88671}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "blue.zebra.Data", "blue.zebra.Data\blue.zebra.Data.csproj", "{6C41530D-E9E8-4F6D-AE2F-2F58939CA1B5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{D74AF26B-BD5F-4740-A75A-308064C88671}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D74AF26B-BD5F-4740-A75A-308064C88671}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D74AF26B-BD5F-4740-A75A-308064C88671}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C41530D-E9E8-4F6D-AE2F-2F58939CA1B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C41530D-E9E8-4F6D-AE2F-2F58939CA1B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C41530D-E9E8-4F6D-AE2F-2F58939CA1B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C41530D-E9E8-4F6D-AE2F-2F58939CA1B5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
