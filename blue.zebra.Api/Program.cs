@@ -39,3 +39,11 @@ String storeConnectionString = builder.Configuration.GetConnectionString("StoreC
     throw new ArgumentNullException("ConnectionString:StoreConnection");
 
 builder.Services.AddDbContext<StoreContext>(options => options.UseSqlServer(storeConnectionString, b => b.MigrationsAssembly("blue.zebra.Api")));
+
+builder.Services.AddCors(options => { 
+    options.AddDefaultPolicy(builder => {
+        builder.WithOrigins("http://localhost:5002", "https://blue-zebra-api.azurewebsites.net/catalog")
+        .AllowAnyHeader()
+        .AllowAnyMethod();
+    });
+});
