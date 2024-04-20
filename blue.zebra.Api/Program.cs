@@ -44,6 +44,6 @@ builder.Services.AddCors(options => {
     options.AddDefaultPolicy(builder => {
         builder.WithOrigins("http://localhost:5002", "https://blue-zebra-api.azurewebsites.net/catalog")
         .AllowAnyHeader()
-        .AllowAnyMethod();
+        .AllowAnyMethod());
     });
 });
