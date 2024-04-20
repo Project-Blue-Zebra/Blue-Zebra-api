@@ -34,3 +34,8 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+
+String storeConnectionString = builder.Configuration.GetConnectionString("StoreConnection") ?? 
+    throw new ArgumentNullException("ConnectionString:StoreConnection");
+
+builder.Services.AddDbContext<StoreContext>(options => options.UseSqlServer(storeConnectionString, b => b.MigrationsAssembly("blue.zebra.Api")));
